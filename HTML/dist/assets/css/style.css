@@ -884,6 +884,9 @@ select{
 .h-\[00px\]{
   height: 00px !important;
 }
+.h-\[400px\]{
+  height: 400px !important;
+}
 .w-10{
   width: 2.5rem !important;
 }
@@ -1685,6 +1688,10 @@ p{
   --tw-text-opacity: 1 !important;
   color: rgb(93 135 255 / var(--tw-text-opacity)) !important;
 }
+.group:hover .group-hover\:text-white{
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+}
 .group.is-sticky .group-\[\&\.is-sticky\]\:text-dark{
   --tw-text-opacity: 1 !important;
   color: rgb(33 33 33 / var(--tw-text-opacity)) !important;
@@ -1870,4 +1877,26 @@ p{
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1) !important;
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color) !important;
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
+}
+
+/* Notification Styles */
+.notification {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #4CAF50; /* Green */
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: none;
+  z-index: 1000;
+}
+
+.notification.error {
+  background-color: #f44336; /* Red */
+}
+
+.notification.show {
+  display: block;
 }

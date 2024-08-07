@@ -25,7 +25,7 @@
     <div class="container mx-auto">
         <div class="grid lg:grid-cols-2 grid-cols-1 gap-x-6 gap-y-10 items-center">
             <div class="">
-                <h1 class="text-3xl md:text-5xl lg:text-6xl text-white tracking-normal capitalize leading-normal font-bold max-w-2xl">
+                <h1 class="text-3xl md:text-5xl lg:text-6xl text-dark tracking-normal capitalize leading-normal font-bold max-w-2xl">
                     Your Partner for Innovative Web Solutions.
                 </h1>
                 <p class="text-base font-medium text-gray-400 mt-3 capitalize">
@@ -38,8 +38,8 @@
                         Explore Our Services
                     </a>
 
-                    <a class="inline-block py-2 px-6 text-white rounded-md border border-primary text-base hover:border-gray-800 hover:bg-gray-800 group hover:text-primary transition-all duration-500 font-medium" href="javascript:void(0)">
-                        <i class="mdi mdi-email text-base text-white mr-1 group-hover:text-primary transition-all duration-500"></i>
+                    <a class="inline-block py-2 px-6 text-primary rounded-md border border-primary text-base hover:border-gray-800 hover:bg-gray-800 group hover:text-primary transition-all duration-500 font-medium" href="javascript:void(0)">
+                        <i class="mdi mdi-email text-base text-primary mr-1 group-hover:text-white transition-all duration-500"></i>
                         Contact Us
                     </a>
                 </div>
@@ -164,7 +164,7 @@
                 </div>
             </div>
             <div class="hidden md:flex items-center">
-                <img src="assets/images/steps.png" class="h-[00px] rounded-l mx-auto" alt="feature-image">
+                <img src="/src/assets/images/steps.png" class="h-[400px] rounded-l mx-auto" alt="feature-image">
             </div>
         </div>
     </div>
@@ -182,9 +182,11 @@
             <div class="lg:ms-5 ms-8">
                 <span class="text-sm text-primary uppercase font-semibold tracking-wider">Our Features</span>
                 <h2 class="text-3xl md:text-4xl/tight font-semibold mt-4">Empowering Your Business Through Web Solutions</h2>
+                <!--
                 <a href="#" class="inline-flex items-center justify-center gap-3 text-sm font-medium text-primary mt-6">Learn More
                     <i data-lucide="move-right"></i>
                 </a>
+                -->
                 <hr class="border-gray-600 my-6"></hr>
 
                 <div class="flex items-start gap-5">
@@ -425,8 +427,7 @@
         </div>
     </div>
     <!--Faqs end-->
-    
-    <!-- Contact Start -->
+<!-- Contact Start -->
 <section id="contact" class="py-20 bg-gray-50">
     <div class="container">
         <div class="grid lg:grid-cols-3 gap-6 items-center">
@@ -459,32 +460,32 @@
 
             <div class="lg:col-span-2 lg:ms-24">
                 <div class="p-6 md:p-12 rounded-md shadow-lg bg-white">
-                    <form>
+                    <form id="contactForm">
                         <div class="grid sm:grid-cols-2 gap-6">
                             <div>
                                 <label for="formFirstName" class="block text-sm/normal font-semibold text-black mb-2">First Name</label>
-                                <input type="text" class="block w-full text-sm rounded-md py-3 px-4 border-gray-200 focus:border-gray-300 focus:ring-transparent" id="formFirstName" placeholder="Your first name..." required="">
+                                <input type="text" class="block w-full text-sm rounded-md py-3 px-4 border-gray-200 focus:border-gray-300 focus:ring-transparent" id="formFirstName" placeholder="Your first name..." required>
                             </div>
 
                             <div>
                                 <label for="formLastName" class="block text-sm/normal font-semibold text-black mb-2">Last Name</label>
-                                <input type="text" class="block w-full text-sm rounded-md py-3 px-4 border-gray-200 focus:border-gray-300 focus:ring-transparent" id="formLastName" placeholder="Last name..." required="">
+                                <input type="text" class="block w-full text-sm rounded-md py-3 px-4 border-gray-200 focus:border-gray-300 focus:ring-transparent" id="formLastName" placeholder="Last name..." required>
                             </div>
 
                             <div>
                                 <label for="formEmail" class="block text-sm/normal font-semibold text-black mb-2">Email Address</label>
-                                <input type="email" class="block w-full text-sm rounded-md py-3 px-4 border-gray-200 focus:border-gray-300 focus:ring-transparent" id="formEmail" placeholder="Your email..." required="">
+                                <input type="email" class="block w-full text-sm rounded-md py-3 px-4 border-gray-200 focus:border-gray-300 focus:ring-transparent" id="formEmail" placeholder="Your email..." required>
                             </div>
 
                             <div>
                                 <label for="formPhone" class="block text-sm/normal font-semibold text-black mb-2">Phone Number</label>
-                                <input type="text" class="block w-full text-sm rounded-md py-3 px-4 border-gray-200 focus:border-gray-300 focus:ring-transparent" id="formPhone" placeholder="Type phone number..." required="">
+                                <input type="text" class="block w-full text-sm rounded-md py-3 px-4 border-gray-200 focus:border-gray-300 focus:ring-transparent" id="formPhone" placeholder="Type phone number..." required>
                             </div>
 
                             <div class="sm:col-span-2">
                                 <div class="mb-4">
                                     <label for="formMessages" class="block text-sm/normal font-semibold text-black mb-2">Messages</label>
-                                    <textarea class="block w-full text-sm rounded-md py-3 px-4 border-gray-200 focus:border-gray-300 focus:ring-transparent" id="formMessages" rows="4" placeholder="Type messages..." required=""></textarea>
+                                    <textarea class="block w-full text-sm rounded-md py-3 px-4 border-gray-200 focus:border-gray-300 focus:ring-transparent" id="formMessages" rows="4" placeholder="Type messages..." required></textarea>
                                 </div>
                             </div>
                         </div>
@@ -498,6 +499,7 @@
     </div>
 </section>
 <!-- Contact End -->
+
     @@include("partials/footer/footer.html")
 
     <!-- @@include("partials/back-to-top.html") -->

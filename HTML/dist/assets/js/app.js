@@ -1,22 +1,3 @@
-/* Template Name: Evea - Responsive App Landing Tailwind CSS Template
-   Author: Zoyothemes
-   Email: zoyothemes@gmail.com
-   Website: https://zoyothemes.com
-   Version: 1.0.0
-   Created: April 2024
-   File Description: Main JS file of the template
-*/
-
-/*********************************/
-/*         INDEX                 */
-/*================================
- *     01.  Sticky Navbar         *
- *     02.  Navbar active         *
- *     03.  Back to top           *
- *     04.  Accordions            *
- *     05.  Lucide Icons          *
- ================================*/
-
 /*********************/
 /*   Sticky Navbar   */
 /*********************/
@@ -257,3 +238,62 @@ try {
 /*   Lucide Icons   */
 /*********************/
 lucide.createIcons();
+
+/*********************/
+/*   Contact Form   */
+/*********************/
+document.addEventListener('DOMContentLoaded', function () {
+  document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const firstName = document.getElementById('formFirstName').value;
+      const lastName = document.getElementById('formLastName').value;
+      const email = document.getElementById('formEmail').value;
+      const phone = document.getElementById('formPhone').value;
+      const message = document.getElementById('formMessages').value;
+
+      const webhookURL = 'https://discord.com/api/webhooks/1270801475584393297/tzSYkHpUexe_xSvvQYIswabKLlLNR2bRDU-aMDRR9lCNNtzqDh6JN_SosvEBoQA7mwKi';
+
+      const payload = {
+          content: `**New Contact Form Submission**\n**First Name:** ${firstName}\n**Last Name:** ${lastName}\n**Email:** ${email}\n**Phone:** ${phone}\n**Message:** ${message}`
+      };
+
+      fetch(webhookURL, {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(payload)
+      }).then(response => {
+          if (response.ok) {
+              showNotification('Your message has been sent successfully!', 'success');
+              document.getElementById('contactForm').reset();
+          } else {
+              showNotification('There was a problem with your submission. Please try again.', 'error');
+          }
+      }).catch(error => {
+          console.error('Error:', error);
+          showNotification('There was a problem with your submission. Please try again.', 'error');
+      });
+  });
+});
+
+function showNotification(message, type) {
+  const notification = document.createElement('div');
+  notification.className = `notification ${type}`;
+  notification.innerText = message;
+  document.body.appendChild(notification);
+
+  // Show the notification
+  setTimeout(() => {
+      notification.classList.add('show');
+  }, 100);
+
+  // Hide the notification after 3 seconds
+  setTimeout(() => {
+      notification.classList.remove('show');
+      setTimeout(() => {
+          document.body.removeChild(notification);
+      }, 500);
+  }, 3000);
+}
