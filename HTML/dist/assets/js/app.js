@@ -259,7 +259,6 @@ document.addEventListener("DOMContentLoaded", function () {
     notification.textContent = message;
     notification.className = `notification ${isError ? "error" : ""} show`;
 
-    // Hide the notification after 3 seconds
     setTimeout(() => {
       notification.className = "notification";
     }, 3000);
@@ -276,62 +275,27 @@ document.addEventListener("DOMContentLoaded", function () {
       const reason = document.getElementById("formReason").value.trim();
       const message = document.getElementById("formMessages").value.trim();
 
-      // Validate email with a stricter regex
-      const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-      if (!emailPattern.test(email)) {
-        showNotification("Please enter a valid email address.", true);
-        return;
-      }
-
-      // Check minimum length for the message
-      if (message.length < 20) {
-        showNotification(
-          "Your message must be at least 20 characters long.",
-          true
-        );
-        return;
-      }
-
-      const webhookURL =
-        "https://discord.com/api/webhooks/1270801475584393297/tzSYkHpUexe_xSvvQYIswabKLlLNR2bRDU-aMDRR9lCNNtzqDh6JN_SosvEBoQA7mwKi";
-
-      const payload = {
-        content: `**New Contact Form Submission**\n**Full Name:** ${fullName}\n**Email:** ${email}\n**Phone:** ${phone}\n**Reason for Contact:** ${reason}\n**Message:** ${message}`,
-      };
-
-      // Ensure all fields are filled out
-      if (!fullName || !email || !reason || !message) {
-        showNotification("Please fill out all required fields.", true);
-        return;
-      }
-
-      fetch(webhookURL, {
+      fetch("https://vercel.com/not-kamis-projects/back/send-message", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(payload),
+        body: JSON.stringify({ fullName, email, phone, reason, message }),
       })
         .then((response) => {
           if (response.ok) {
-            showNotification("Your message has been sent successfully!");
-            document.getElementById("contactForm").reset();
+            return response.json();
           } else {
-            return response.json().then((data) => {
-              console.error("Error details:", data);
-              showNotification(
-                "There was a problem with your submission. Please try again.",
-                true
-              );
-            });
+            throw new Error("Failed to send message");
           }
+        })
+        .then((data) => {
+          showNotification(data.message);
+          document.getElementById("contactForm").reset();
         })
         .catch((error) => {
           console.error("Error:", error);
-          showNotification(
-            "There was a problem with your submission. Please try again.",
-            true
-          );
+          showNotification("There was a problem with your submission. Please try again.", true);
         });
     });
 });
