@@ -1310,6 +1310,15 @@ select {
   padding-top: 1.25rem !important;
   padding-bottom: 1.25rem !important;
 }
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.gap-20 {
+  gap: 5rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem !important;
 }
