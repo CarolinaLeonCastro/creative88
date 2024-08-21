@@ -173,17 +173,20 @@
     </nav>
     <!-- Navbar End -->
     <!-- Pricing Section -->
-    <section id="pricing" class="py-20 bg-gray-100">
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-[#17243A]">
       <div class="container mx-auto">
         <span
           class="text-sm text-primary uppercase font-semibold tracking-wider"
           >Our Pricing</span
         >
-        <h2 class="text-3xl md:text-4xl font-semibold mt-4 text-center">
+        <h2
+          class="text-3xl md:text-4xl font-semibold mt-4 text-center text-white"
+        >
           Affordable Plans for Every Need
         </h2>
         <p
-          class="text-base font-normal text-gray-500 mt-6 max-w-2xl mx-auto text-center"
+          class="text-base font-normal text-gray-300 mt-6 max-w-2xl mx-auto text-center"
         >
           Choose from our range of packages tailored to fit your business needs,
           whether you're just starting out or looking to enhance your digital
@@ -192,12 +195,14 @@
 
         <div class="mt-12 space-y-8">
           <!-- Basic Website Plan -->
-          <div class="pricing-block collapsed p-8" onclick="toggleBlock(this)">
+          <div
+            class="pricing-block collapsed p-8 bg-white"
+            onclick="toggleBlock(this)"
+          >
             <h3 class="text-2xl font-bold">Basic Website</h3>
             <p class="text-base text-gray-500 mt-4">
               Ideal for personal blogs or small businesses.
             </p>
-            <!-- <p class="text-base text-gray-500 mt-4">Starting at 1000€</p> -->
             <div class="more-info">
               <ul class="mt-4 space-y-2">
                 <li>Up to 5 Pages</li>
@@ -214,12 +219,14 @@
           </div>
 
           <!-- Professional Website Plan -->
-          <div class="pricing-block collapsed p-8" onclick="toggleBlock(this)">
+          <div
+            class="pricing-block collapsed p-8 bg-white"
+            onclick="toggleBlock(this)"
+          >
             <h3 class="text-2xl font-bold">Professional Website</h3>
             <p class="text-base text-gray-500 mt-4">
               Perfect for small to medium-sized businesses.
             </p>
-            <!-- <p class="text-base text-gray-500 mt-4">Starting at 2500€</p> -->
             <div class="more-info">
               <ul class="mt-4 space-y-2">
                 <li>Up to 10 Pages</li>
@@ -236,12 +243,14 @@
           </div>
 
           <!-- E-Commerce Website Plan -->
-          <div class="pricing-block collapsed p-8" onclick="toggleBlock(this)">
+          <div
+            class="pricing-block collapsed p-8 bg-white"
+            onclick="toggleBlock(this)"
+          >
             <h3 class="text-2xl font-bold">E-Commerce Website</h3>
             <p class="text-base text-gray-500 mt-4">
               For businesses ready to sell online.
             </p>
-            <!-- <p class="text-base text-gray-500 mt-4">Starting at 5000€</p> -->
             <div class="more-info">
               <ul class="mt-4 space-y-2">
                 <li>Unlimited Pages</li>
@@ -258,7 +267,10 @@
           </div>
 
           <!-- Custom Plan -->
-          <div class="pricing-block collapsed p-8" onclick="toggleBlock(this)">
+          <div
+            class="pricing-block collapsed p-8 bg-white"
+            onclick="toggleBlock(this)"
+          >
             <h3 class="text-2xl font-bold">Custom Plan</h3>
             <p class="text-base text-gray-500 mt-4">
               Need something more specific?
@@ -277,6 +289,7 @@
         </div>
       </div>
     </section>
+
     <!-- Contact Start -->
     <section id="contact" class="py-20 bg-gray-50">
       <div class="container">
@@ -569,13 +582,22 @@
     <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.js"></script>
     <script>
       function toggleBlock(element) {
-        if (element.classList.contains("collapsed")) {
-          element.classList.remove("collapsed");
-          element.classList.add("expanded");
-        } else {
-          element.classList.remove("expanded");
-          element.classList.add("collapsed");
-        }
+        // Trouver tous les blocs de prix
+        const pricingBlocks = document.querySelectorAll(".pricing-block");
+
+        // Fermer tous les autres blocs
+        pricingBlocks.forEach((block) => {
+          if (block !== element && block.classList.contains("expanded")) {
+            block.classList.remove("expanded");
+            block.classList.add("collapsed");
+            block.setAttribute("aria-expanded", "false"); // Mise à jour de l'état ARIA
+          }
+        });
+
+        // Basculer l'état du bloc cliqué
+        const isExpanded = element.classList.toggle("expanded");
+        element.classList.toggle("collapsed", !isExpanded);
+        element.setAttribute("aria-expanded", isExpanded.toString());
       }
     </script>
 
