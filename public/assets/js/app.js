@@ -275,7 +275,8 @@ document.addEventListener("DOMContentLoaded", function () {
       const reason = document.getElementById("formReason").value.trim();
       const message = document.getElementById("formMessages").value.trim();
 
-      fetch("https://vercel.com/not-kamis-projects/back/send-message", {
+      fetch("/send-message", {
+        // Mettre à jour l'URL ici
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -295,7 +296,10 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .catch((error) => {
           console.error("Error:", error);
-          showNotification("There was a problem with your submission. Please try again.", true);
+          showNotification(
+            "There was a problem with your submission. Please try again.",
+            true
+          );
         });
     });
 });
