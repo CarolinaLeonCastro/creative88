@@ -92,7 +92,7 @@
                 </div>
     
                 <div class="ms-auto shrink hidden lg:inline-flex gap-2">
-                    <a href="#contact" id="nav_get_in" class="py-2 px-6 inline-flex items-center gap-2 rounded-md text-base text-white bg-primary hover:bg-primaryDark transition-all duration-500 font-medium">
+                    <a href="#contact" id="nav-get-in span" class="py-2 px-6 inline-flex items-center gap-2 rounded-md text-base text-white bg-primary hover:bg-primaryDark transition-all duration-500 font-medium">
                         <i data-lucide="send" class="h-4 w-4 fill-white/40"></i>
                         <span class="hidden sm:block">Get in touch</span>
                     </a>
@@ -688,40 +688,41 @@
 
 
       <script>
-        function loadTranslations(language) {
-            fetch('translations.json')
-                .then(response => response.json())
-                .then(data => {
-                    const translations = data[language];
-                    document.querySelector('#nav-home').textContent = translations.nav_home;
-                    document.querySelector('#nav-services').textContent = translations.nav_services;
-                    document.querySelector('#nav-about-us').textContent = translations.nav_about_us;
-                    document.querySelector('#nav-pricing').textContent = translations.nav_pricing;
-                    document.querySelector('#nav-contact').textContent = translations.nav_contact;
-                    document.querySelector('#nav-get-in').textContent = translations.nav_get_in;
-                    document.querySelector('#hero-title').textContent = translations.hero_title;
-                    document.querySelector('#hero-subtitle').textContent = translations.hero_subtitle;
-                    document.querySelector('#hero-explore-services').textContent = translations.hero_explore_services;
-                    document.querySelector('#hero-contact-us').textContent = translations.hero_contact_us;
-                    document.querySelector('#services-title').textContent = translations.services_title;
-                    document.querySelector('#services-subtitle').textContent = translations.services_subtitle;
-                    document.querySelector('#services-description').textContent = translations.services_description;
-                    document.querySelector('#service-digital-marketing-title').textContent = translations.service_digital_marketing_title;
-                    document.querySelector('#service-digital-marketing-description').textContent = translations.service_digital_marketing_description;
-                    document.querySelector('#service-seo-title').textContent = translations.service_seo_title;
-                    document.querySelector('#service-seo-description').textContent = translations.service_seo_description;
-                    document.querySelector('#service-ux-title').textContent = translations.service_ux_title;
-                    document.querySelector('#service-ux-description').textContent = translations.service_ux_description;
-                    document.querySelector('#service-web-dev-title').textContent = translations.service_web_dev_title;
-                    document.querySelector('#service-web-dev-description').textContent = translations.service_web_dev_description;
-                })
-                .catch(error => console.error('Error loading the translations:', error));
-        }
-    
-        // Charger toujours la langue anglaise par défaut
-        document.addEventListener('DOMContentLoaded', () => {
-            loadTranslations('en');
-        });
+     function loadTranslations(language) {
+    fetch('translations.json')
+        .then(response => response.json())
+        .then(data => {
+            const translations = data[language];
+            document.querySelector('#nav-home').textContent = translations.nav_home;
+            document.querySelector('#nav-services').textContent = translations.nav_services;
+            document.querySelector('#nav-about-us').textContent = translations.nav_about_us;
+            document.querySelector('#nav-pricing').textContent = translations.nav_pricing;
+            document.querySelector('#nav-contact').textContent = translations.nav_contact;
+            document.querySelector('#nav-get-in span').textContent = translations.nav_get_in;
+            document.querySelector('#hero-title').textContent = translations.hero_title;
+            document.querySelector('#hero-subtitle').textContent = translations.hero_subtitle;
+            document.querySelector('#hero-explore-services').textContent = translations.hero_explore_services;
+            document.querySelector('#hero-contact-us').textContent = translations.hero_contact_us;
+            document.querySelector('#services-title').textContent = translations.services_title;
+            document.querySelector('#services-subtitle').textContent = translations.services_subtitle;
+            document.querySelector('#services-description').textContent = translations.services_description;
+            document.querySelector('#service-digital-marketing-title').textContent = translations.service_digital_marketing_title;
+            document.querySelector('#service-digital-marketing-description').textContent = translations.service_digital_marketing_description;
+            document.querySelector('#service-seo-title').textContent = translations.service_seo_title;
+            document.querySelector('#service-seo-description').textContent = translations.service_seo_description;
+            document.querySelector('#service-ux-title').textContent = translations.service_ux_title;
+            document.querySelector('#service-ux-description').textContent = translations.service_ux_description;
+            document.querySelector('#service-web-dev-title').textContent = translations.service_web_dev_title;
+            document.querySelector('#service-web-dev-description').textContent = translations.service_web_dev_description;
+        })
+        .catch(error => console.error('Error loading the translations:', error));
+}
+
+// Charger toujours la langue anglaise par défaut
+document.addEventListener('DOMContentLoaded', () => {
+    loadTranslations('en');
+});
+
     </script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
