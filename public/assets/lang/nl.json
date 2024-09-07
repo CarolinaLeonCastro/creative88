@@ -34,5 +34,48 @@
   "about-step3-title": "Ontwikkeling en implementatie",
   "about-step3-description": "Zodra het ontwerp is goedgekeurd, brengen we uw site tot leven met behulp van geavanceerde technologieën, die zorgen voor responsiviteit en prestaties.",
   "about-step4-title": "Lancering en ondersteuning",
-  "about-step4-description": "Na grondige tests en uw definitieve goedkeuring lanceren we uw website en bieden we doorlopende ondersteuning."
+  "about-step4-description": "Na grondige tests en uw definitieve goedkeuring lanceren we uw website en bieden we doorlopende ondersteuning.",
+
+  "features-heading": "Onze functies",
+  "features-subtitle": "Uw bedrijf versterken met weboplossingen",
+  "feature1-title": "Aangepaste webontwikkeling",
+  "feature1-description": "Wij ontwikkelen op maat gemaakte websites die voldoen aan de specifieke bedrijfsbehoeften met behulp van de nieuwste technologieën.",
+  "feature2-title": "Responsief ontwerp",
+  "feature2-description": "Onze ontwerpen zijn responsief, waardoor een naadloze ervaring op alle apparaten en schermformaten wordt gegarandeerd.",
+  "feature3-title": "SEO-optimalisatie",
+  "feature3-description": "Wij optimaliseren uw website voor zoekmachines om uw online zichtbaarheid te verbeteren en meer verkeer te genereren.",
+  "feature4-title": "Beveiliging",
+  "feature4-description": "Wij implementeren robuuste beveiligingsmaatregelen om uw website te beschermen tegen potentiële bedreigingen en dataveiligheid te waarborgen.",
+
+  "digital-presence-title": "Uw digitale aanwezigheid versterken",
+  "digital-presence-description": "Bij Creative88 gebruiken we zowel traditionele als geavanceerde digitale marketingstrategieën om uw merk te versterken en groei te stimuleren.",
+  "discover-services": "Ontdek onze diensten",
+  "contact-us": "Neem contact op",
+  
+  "pricing-title": "Onze Prijzen",
+  "pricing-subtitle": "Betaalbare plannen voor elke behoefte",
+  "pricing-description": "Kies uit onze pakketten die zijn afgestemd op de behoeften van uw bedrijf, of u nu net begint of uw digitale aanwezigheid wilt verbeteren.",
+  "basic-website": "Basis Website",
+  "basic-description": "Ideaal voor persoonlijke blogs of kleine bedrijven",
+  "basic-pages": "Tot 5 pagina's",
+  "basic-seo": "Basis SEO-configuratie",
+  "basic-responsive": "Responsief ontwerp",
+  "basic-support": "E-mailondersteuning",
+  "pro-website": "Professionele Website",
+  "pro-description": "Perfect voor kleine tot middelgrote bedrijven",
+  "pro-pages": "Tot 10 pagina's",
+  "pro-seo": "Geavanceerde SEO-configuratie",
+  "pro-design": "Aangepast ontwerp",
+  "pro-support": "Prioritaire e-mailondersteuning",
+  "ecommerce-website": "E-Commerce Website",
+  "ecommerce-description": "Voor bedrijven die klaar zijn om online te verkopen",
+  "ecommerce-pages": "Onbeperkt aantal pagina's",
+  "ecommerce-seo": "SEO & Marketing Setup",
+  "ecommerce-design": "Aangepast E-Commerce ontwerp",
+  "ecommerce-support": "24/7 ondersteuning",
+  "get-started": "Begin Nu",
+  "learn-more": "Meer informatie"
+
+
+
 }

@@ -34,5 +34,49 @@
   "about-step3-title": "Développement et mise en œuvre",
   "about-step3-description": "Une fois le design approuvé, nous donnons vie à votre site en utilisant des technologies de pointe, garantissant réactivité et performance.",
   "about-step4-title": "Lancement et support",
-  "about-step4-description": "Après des tests approfondis et votre approbation finale, nous lançons votre site et fournissons une maintenance continue."
+  "about-step4-description": "Après des tests approfondis et votre approbation finale, nous lançons votre site et fournissons une maintenance continue.",
+
+  "features-heading": "Nos fonctionnalités",
+  "features-subtitle": "Renforcer votre entreprise grâce aux solutions Web",
+  "feature1-title": "Développement Web personnalisé",
+  "feature1-description": "Nous développons des sites Web sur mesure qui répondent aux besoins spécifiques de votre entreprise en utilisant les dernières technologies.",
+  "feature2-title": "Design responsive",
+  "feature2-description": "Nos conceptions sont réactives, garantissant une expérience fluide sur tous les appareils et toutes les tailles d'écran.",
+  "feature3-title": "Optimisation SEO",
+  "feature3-description": "Nous optimisons votre site pour les moteurs de recherche afin d'améliorer votre visibilité en ligne et de générer plus de trafic.",
+  "feature4-title": "Sécurité",
+  "feature4-description": "Nous mettons en place des mesures de sécurité robustes pour protéger votre site contre les menaces potentielles et garantir la sécurité des données.",
+
+  "digital-presence-title": "Renforcer votre présence digitale",
+  "digital-presence-description": "Chez Creative88, nous utilisons des stratégies de marketing digital traditionnelles et de pointe pour valoriser votre marque et stimuler votre croissance.",
+  "discover-services": "Découvrez nos services",
+  "contact-us": "Contactez-nous",
+
+  "pricing-title": "Nos Tarifs",
+  "pricing-subtitle": "Des plans abordables pour tous les besoins",
+  "pricing-description": "Choisissez parmi nos forfaits adaptés aux besoins de votre entreprise, que vous débutiez ou que vous souhaitiez améliorer votre présence numérique.",
+  "basic-website": "Site Web Basique",
+  "basic-description": "Idéal pour les blogs personnels ou les petites entreprises",
+  "basic-pages": "Jusqu'à 5 pages",
+  "basic-seo": "Configuration SEO de base",
+  "basic-responsive": "Conception responsive",
+  "basic-support": "Support par email",
+  "pro-website": "Site Web Professionnel",
+  "pro-description": "Parfait pour les petites et moyennes entreprises",
+  "pro-pages": "Jusqu'à 10 pages",
+  "pro-seo": "Configuration SEO avancée",
+  "pro-design": "Conception personnalisée",
+  "pro-support": "Support par email prioritaire",
+  "ecommerce-website": "Site Web E-Commerce",
+  "ecommerce-description": "Pour les entreprises prêtes à vendre en ligne",
+  "ecommerce-pages": "Pages illimitées",
+  "ecommerce-seo": "Configuration SEO & Marketing",
+  "ecommerce-design": "Conception e-commerce personnalisée",
+  "ecommerce-support": "Support 24/7",
+  "get-started": "Commencer",
+  "learn-more": "En savoir plus"
+
+
+
+  
 }

@@ -34,7 +34,50 @@
   "about-step3-title": "Development & Implementation",
   "about-step3-description": "Once the design is approved, we bring your site to life using cutting-edge technologies, ensuring responsiveness and performance.",
   "about-step4-title": "Launch & Support",
-  "about-step4-description": "After thorough testing and your final approval, we launch your website and provide ongoing maintenance."
+  "about-step4-description": "After thorough testing and your final approval, we launch your website and provide ongoing maintenance.",
+
+  "features-heading": "Our Features",
+  "features-subtitle": "Empowering Your Business Through Web Solutions",
+  "feature1-title": "Custom Web Development",
+  "feature1-description": "We develop tailor-made websites that meet your specific business requirements using the latest technologies.",
+  "feature2-title": "Responsive Design",
+  "feature2-description": "Our designs are responsive, ensuring a seamless experience across all devices and screen sizes.",
+  "feature3-title": "SEO Optimization",
+  "feature3-description": "We optimize your website for search engines to improve your online visibility and drive more traffic.",
+  "feature4-title": "Security",
+  "feature4-description": "We implement robust security measures to protect your website from potential threats and ensure data safety.",
+
+  "digital-presence-title": "Empowering Your Digital Presence",
+  "digital-presence-description": "At Creative88, we leverage both traditional and cutting-edge digital marketing strategies to elevate your brand and drive growth.",
+  "discover-services": "Discover Our Services",
+  "contact-us": "Contact Us",
 
   
+  "pricing-title": "Our Pricing",
+  "pricing-subtitle": "Affordable Plans for Every Need",
+  "pricing-description": "Choose from our range of packages tailored to fit your business needs, whether you're just starting out or looking to enhance your digital presence.",
+  "basic-website": "Basic Website",
+  "basic-description": "Ideal for personal blogs or small businesses",
+  "basic-pages": "Up to 5 Pages",
+  "basic-seo": "Basic SEO Setup",
+  "basic-responsive": "Responsive Design",
+  "basic-support": "Email Support",
+  "pro-website": "Professional Website",
+  "pro-description": "Perfect for small to medium-sized businesses",
+  "pro-pages": "Up to 10 Pages",
+  "pro-seo": "Advanced SEO Setup",
+  "pro-design": "Custom Design",
+  "pro-support": "Priority Email Support",
+  "ecommerce-website": "E-Commerce Website",
+  "ecommerce-description": "For businesses ready to sell online",
+  "ecommerce-pages": "Unlimited Pages",
+  "ecommerce-seo": "SEO & Marketing Setup",
+  "ecommerce-design": "Custom E-Commerce Design",
+  "ecommerce-support": "24/7 Support",
+  "get-started": "Get Started",
+  "learn-more": "Learn More"
+
+
+
+
 }
