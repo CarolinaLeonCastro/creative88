@@ -1,0 +1,5 @@
+Redirect 301 /linktree /linktree.html
+RewriteEngine On
+RewriteCond %{REQUEST_URI} !^/public/
+RewriteRule ^(.*)$ /public/$1 [L]
+

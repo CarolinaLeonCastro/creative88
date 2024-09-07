@@ -1,6 +1,6 @@
 import express from "express";
 import path from "path";
-import fetch from "node-fetch"; // Pour faire des requêtes HTTP vers Discord
+import nodemailer from "nodemailer";
 
 const app = express();
 
@@ -8,38 +8,49 @@ const app = express();
 app.use(express.json());
 
 // Middleware pour servir les fichiers statiques
-app.use(express.static(path.join(process.cwd(), "public")));
+app.use(express.static(path.join(__dirname, "public")));
+
+// Configuration du transporteur Nodemailer pour OVH
+const transporter = nodemailer.createTransport({
+  host: "ssl0.ovh.net", // Serveur SMTP d'OVH
+  port: 465, // Port pour le SSL
+  secure: true, // Utiliser le SSL
+  auth: {
+    user: "hello@creative88.be", // Votre email OVH
+    pass: "kwCQDUMs77HcxEa", // Votre mot de passe email
+  },
+});
 
 // Route pour traiter les requêtes du formulaire
 app.post("/send-message", async (req, res) => {
   const { fullName, email, phone, reason, message } = req.body;
 
-  // Créer le message pour Discord
-  const discordMessage = {
-    content: `**New Contact Request**\n**Name:** ${fullName}\n**Email:** ${email}\n**Phone:** ${phone}\n**Reason:** ${reason}\n**Message:** ${message}`,
+  const mailOptions = {
+    from: '"Nom de votre site" <votre.email@votredomaine.com>', // L'adresse email de l'expéditeur
+    to: "hello@creative88.be", // L'adresse email de destination (où vous voulez recevoir les messages)
+    subject: `New Contact Request from ${fullName}`,
+    text: `
+            Name: ${fullName}
+            Email: ${email}
+            Phone: ${phone}
+            Reason: ${reason}
+            Message: ${message}
+        `,
+    html: `
+            <p><strong>Name:</strong> ${fullName}</p>
+            <p><strong>Email:</strong> ${email}</p>
+            <p><strong>Phone:</strong> ${phone}</p>
+            <p><strong>Reason:</strong> ${reason}</p>
+            <p><strong>Message:</strong><br>${message}</p>
+        `,
   };
 
   try {
-    // Envoyer la requête POST à Discord
-    const response = await fetch(
-      "https://discord.com/api/webhooks/1270801475584393297/tzSYkHpUexe_xSvvQYIswabKLlLNR2bRDU-aMDRR9lCNNtzqDh6JN_SosvEBoQA7mwKi",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(discordMessage),
-      }
-    );
-
-    if (response.ok) {
-      res.json({ message: "Message sent successfully!" });
-    } else {
-      res.status(500).json({ message: "Failed to send message" });
-    }
+    await transporter.sendMail(mailOptions);
+    res.json({ message: "Message sent successfully!" });
   } catch (error) {
-    console.error("Error:", error);
-    res.status(500).json({ message: "An error occurred" });
+    console.error("Error sending email:", error);
+    res.status(500).json({ message: "Failed to send message" });
   }
 });
 

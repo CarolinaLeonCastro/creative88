@@ -275,24 +275,56 @@ document.addEventListener("DOMContentLoaded", function () {
       const reason = document.getElementById("formReason").value.trim();
       const message = document.getElementById("formMessages").value.trim();
 
-      fetch("/send-message", {
-        // Mettre à jour l'URL ici
+      let webhookURL = "";
+
+      switch (reason) {
+        case "inquiry":
+          webhookURL =
+            "https://discord.com/api/webhooks/1280178599416172544/xz1g3sYa-fthPHriXeFZULOWd0WVEO7eBkWgCItUrSAPdviFuHCwv9OYE0jRMHPzjoaR";
+          break;
+        case "support":
+          webhookURL =
+            "https://discord.com/api/webhooks/1280178591497453578/fsNf-PG-SEFMD-i5oS0eXbcoIb7lAnrJmf6glNZ0XeuDirpBwXqXKM07Y-zpdYbwgn2n";
+          break;
+        case "quote":
+          webhookURL =
+            "https://discord.com/api/webhooks/1280178873442504734/vXwR36dPiGMPXMcghCvSG6rNfdKvNqY3chvzfL3_9JVSPXFxZT9bmM6Y9u18S6CoOCya";
+          break;
+        case "feedback":
+          webhookURL =
+            "https://discord.com/api/webhooks/1280178997203828768/OEDrfFeOuKOhh5Xngu25QdkcUPLU2f9pdOHDKDv-F8n__2v--Km5uDUM1fGU1ITOHyAd";
+          break;
+        case "partnership":
+          webhookURL =
+            "https://discord.com/api/webhooks/1280178997203828768/OEDrfFeOuKOhh5Xngu25QdkcUPLU2f9pdOHDKDv-F8n__2v--Km5uDUM1fGU1ITOHyAd";
+          break;
+        case "other":
+          webhookURL =
+            "https://discord.com/api/webhooks/1280179267384119459/Hl0AQHXBrdBC1QOKzqlsklve4OeOVhE8bfb0r5IZzGPEooZIPhhbY4KUrLLs4Tr5EUV5";
+          break;
+        default:
+          showNotification("Invalid reason selected.", true);
+          return;
+      }
+
+      const discordMessage = {
+        content: `**New Contact Request**\n**Name:** ${fullName}\n**Email:** ${email}\n**Phone:** ${phone}\n**Reason:** ${reason}\n**Message:** ${message}`,
+      };
+
+      fetch(webhookURL, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ fullName, email, phone, reason, message }),
+        body: JSON.stringify(discordMessage),
       })
         .then((response) => {
           if (response.ok) {
-            return response.json();
+            showNotification("Message sent successfully!");
+            document.getElementById("contactForm").reset();
           } else {
             throw new Error("Failed to send message");
           }
-        })
-        .then((data) => {
-          showNotification(data.message);
-          document.getElementById("contactForm").reset();
         })
         .catch((error) => {
           console.error("Error:", error);
