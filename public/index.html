@@ -32,6 +32,9 @@
     <!--CDN-->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
 
+    <!-- Flag Icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+
     <!-- favicon -->
     <link href="assets/images/favicon.ico" rel="shortcut icon">
 
@@ -646,16 +649,31 @@
                 </div>
 
                 <!-- Language Selector -->
-             <div class="language-selector text-right p-4">
-            <!-- <label for="language-switch">Choose language: </label> -->
-                <select id="language-switch" class="p-2 border">
-                    <option value="en" data-translate="lang-en">English</option>
-                    <option value="fr" data-translate="lang-fr">Français</option>
-                    <option value="nl" data-translate="lang-nl">Nederlands</option>
-                 </select>
-            </div>
+                <div class="language-selector text-right p-4">
+                    <ul class="flex justify-end">
+                        <li class="mr-2">
+                            <a href="#" data-lang="en" class="lang-option">
+                                <span class="flag-icon flag-icon-gb"></span>
+                            </a>
+                        </li>
+                        <li class="mr-2">
+                            <a href="#" data-lang="fr" class="lang-option">
+                                <span class="flag-icon flag-icon-fr"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-lang="nl" class="lang-option">
+                                <span class="flag-icon flag-icon-nl"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                
 
 
+          
+            
 
                 <div class="col-span-1">
                     <img src="assets/images/footer.png" alt="Footer funny Image" class="h-48 w-full object-cover rounded-lg" loading="lazy">
@@ -712,30 +730,33 @@
     <script src="assets/js/app.js" ></script>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const languageSwitch = document.getElementById('language-switch');
-            
-            function loadTranslations(language) {
-                fetch(`assets/lang/${language}.json`)
-                    .then(response => response.json())
-                    .then(translations => {
-                        document.querySelectorAll('[data-translate]').forEach(element => {
-                            const key = element.getAttribute('data-translate');
-                            element.textContent = translations[key] || element.textContent;
-                        });
-                    })
-                    .catch(error => console.error('Error loading translations:', error));
-            }
-    
-            // Load default language (English)
-            loadTranslations('en');
-    
-            // Change language on user selection
-            languageSwitch.addEventListener('change', function() {
-                const selectedLanguage = this.value;
-                loadTranslations(selectedLanguage);
-            });
+      document.addEventListener("DOMContentLoaded", function() {
+    // Fonction pour charger les traductions
+    function loadTranslations(language) {
+        fetch(`assets/lang/${language}.json`)
+            .then(response => response.json())
+            .then(translations => {
+                document.querySelectorAll('[data-translate]').forEach(element => {
+                    const key = element.getAttribute('data-translate');
+                    element.textContent = translations[key] || element.textContent;
+                });
+            })
+            .catch(error => console.error('Error loading translations:', error));
+    }
+
+    // Charger la langue par défaut (anglais)
+    loadTranslations('en');
+
+    // Ajouter un écouteur d'événements sur chaque drapeau
+    document.querySelectorAll('.lang-option').forEach(function(el) {
+        el.addEventListener('click', function(e) {
+            e.preventDefault();
+            const selectedLanguage = this.getAttribute('data-lang');
+            loadTranslations(selectedLanguage);
         });
+    });
+});
+
     </script>
     
 
