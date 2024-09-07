@@ -74,7 +74,49 @@
   "ecommerce-design": "Aangepast E-Commerce ontwerp",
   "ecommerce-support": "24/7 ondersteuning",
   "get-started": "Begin Nu",
-  "learn-more": "Meer informatie"
+  "learn-more": "Meer informatie",
+
+  "faq-title": "FAQ's",
+  "faq-subtitle": "Veelgestelde Vragen",
+  "faq-q1": "Wat is de kostprijs van een op maat gemaakte website?",
+  "faq-a1": "De kostprijs van een op maat gemaakte website varieert afhankelijk van de complexiteit en de vereiste functies. Onze prijzen beginnen vanaf 1.000€ voor een basiswebsite. Neem contact met ons op voor een gedetailleerde offerte.",
+  "faq-q2": "Hoe lang duurt het om een website te bouwen?",
+  "faq-a2": "De tijdlijn voor het bouwen van een website hangt af van de omvang van het project. Een basiswebsite duurt doorgaans 4-6 weken, terwijl complexere sites enkele maanden kunnen duren.",
+  "faq-q3": "Biedt u websiteonderhoud aan?",
+  "faq-a3": "Ja, wij bieden doorlopende onderhouds- en ondersteuningspakketten aan om ervoor te zorgen dat uw website up-to-date en veilig blijft.",
+  "faq-q4": "Zal mijn website mobielvriendelijk zijn?",
+  "faq-a4": "Absoluut! Al onze websites zijn ontworpen om responsief en mobielvriendelijk te zijn, zodat ze er op alle apparaten geweldig uitzien.",
+  "faq-q5": "Kunt u helpen met SEO?",
+  "faq-a5": "Ja, wij bieden SEO-diensten aan om de zichtbaarheid van uw website op zoekmachines te verbeteren en meer verkeer aan te trekken.",
+  "faq-q6": "Wat als ik na de lancering wijzigingen aan mijn website moet aanbrengen?",
+  "faq-a6": "Wij bieden ondersteuning na de lancering en kunnen indien nodig wijzigingen of updates aan uw website aanbrengen. Neem contact met ons op om uw vereisten te bespreken.",
+
+  "unique-contact-title": "Neem contact met ons op",
+  "unique-contact-subtitle": "We staan open voor een gesprek met goede mensen.",
+  "unique-full-name": "Volledige naam",
+  "unique-email-address": "E-mailadres",
+  "unique-phone-number": "Telefoonnummer",
+  "unique-reason-contact": "Reden voor contact",
+  "unique-message": "Bericht",
+  "unique-general-inquiry": "Algemene vraag",
+  "unique-technical-support": "Technische ondersteuning",
+  "unique-request-quote": "Offerte aanvragen",
+  "unique-feedback": "Feedback",
+  "unique-partnership-opportunity": "Samenwerkingsmogelijkheid",
+  "unique-other": "Ander",
+  "unique-send-message": "Bericht versturen",
+
+  "footer-company-title": "Bedrijf",
+  "footer-home": "Startpagina",
+  "footer-services": "Diensten",
+  "footer-about": "Over ons",
+  "footer-pricing": "Prijzen",
+  "footer-contact": "Contact",
+  "lang-en": "Engels",
+  "lang-fr": "Frans",
+  "lang-nl": "Nederlands"
+
+ 
 
 
 

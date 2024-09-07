@@ -75,7 +75,50 @@
   "ecommerce-design": "Custom E-Commerce Design",
   "ecommerce-support": "24/7 Support",
   "get-started": "Get Started",
-  "learn-more": "Learn More"
+  "learn-more": "Learn More",
+
+  "faq-title": "FAQs",
+  "faq-subtitle": "Frequently Asked Questions",
+  "faq-q1": "What is the cost of a custom website?",
+  "faq-a1": "The cost of a custom website varies depending on the complexity and features required. Our prices start from 1,000€ for a basic website. Contact us for a detailed quote.",
+  "faq-q2": "How long does it take to build a website?",
+  "faq-a2": "The timeline for building a website depends on the project scope. Typically, a basic website takes about 4-6 weeks, while more complex sites can take several months.",
+  "faq-q3": "Do you offer website maintenance?",
+  "faq-a3": "Yes, we offer ongoing website maintenance and support packages to ensure your website remains updated and secure.",
+  "faq-q4": "Will my website be mobile-friendly?",
+  "faq-a4": "Absolutely! All our websites are designed to be responsive and mobile-friendly, ensuring they look great on all devices.",
+  "faq-q5": "Can you help with SEO?",
+  "faq-a5": "Yes, we provide SEO services to help improve your website's visibility on search engines and attract more traffic.",
+  "faq-q6": "What if I need changes to my website after it's launched?",
+  "faq-a6": "We offer post-launch support and can make changes or updates to your website as needed. Contact us to discuss your requirements.",
+
+  "unique-contact-title": "Contact Us",
+  "unique-contact-subtitle": "We're open to talk to good people.",
+  "unique-full-name": "Full Name",
+  "unique-email-address": "Email Address",
+  "unique-phone-number": "Phone Number",
+  "unique-reason-contact": "Reason for Contact",
+  "unique-message": "Message",
+  "unique-general-inquiry": "General Inquiry",
+  "unique-technical-support": "Technical Support",
+  "unique-request-quote": "Request a Quote",
+  "unique-feedback": "Feedback",
+  "unique-partnership-opportunity": "Partnership Opportunity",
+  "unique-other": "Other",
+  "unique-send-message": "Send Message",
+
+  "footer-company-title": "Company",
+  "footer-home": "Home",
+  "footer-services": "Services",
+  "footer-about": "About us",
+  "footer-pricing": "Pricing",
+  "footer-contact": "Contact",
+  "lang-en": "English",
+  "lang-fr": "French",
+  "lang-nl": "Dutch"
+
+  
+  
 
 
 

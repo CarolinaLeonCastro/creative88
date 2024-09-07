@@ -74,7 +74,49 @@
   "ecommerce-design": "Conception e-commerce personnalisée",
   "ecommerce-support": "Support 24/7",
   "get-started": "Commencer",
-  "learn-more": "En savoir plus"
+  "learn-more": "En savoir plus",
+
+  "faq-title": "FAQ",
+  "faq-subtitle": "Questions Fréquemment Posées",
+  "faq-q1": "Quel est le coût d'un site web personnalisé ?",
+  "faq-a1": "Le coût d'un site web personnalisé varie en fonction de la complexité et des fonctionnalités requises. Nos prix commencent à partir de 1 000 € pour un site de base. Contactez-nous pour un devis détaillé.",
+  "faq-q2": "Combien de temps faut-il pour créer un site web ?",
+  "faq-a2": "Le délai de création d'un site web dépend de l'envergure du projet. En général, un site de base prend environ 4 à 6 semaines, tandis que des sites plus complexes peuvent prendre plusieurs mois.",
+  "faq-q3": "Proposez-vous une maintenance de site web ?",
+  "faq-a3": "Oui, nous offrons des forfaits de maintenance continue pour garantir que votre site reste à jour et sécurisé.",
+  "faq-q4": "Mon site sera-t-il compatible avec les mobiles ?",
+  "faq-a4": "Absolument ! Tous nos sites sont conçus pour être réactifs et compatibles avec les appareils mobiles, garantissant une apparence optimale sur tous les appareils.",
+  "faq-q5": "Pouvez-vous aider avec le SEO ?",
+  "faq-a5": "Oui, nous proposons des services SEO pour améliorer la visibilité de votre site sur les moteurs de recherche et attirer plus de trafic.",
+  "faq-q6": "Que faire si j'ai besoin de modifications après la mise en ligne ?",
+  "faq-a6": "Nous offrons un support post-lancement et pouvons effectuer des modifications ou des mises à jour sur votre site selon vos besoins. Contactez-nous pour discuter de vos exigences.",
+
+  "unique-contact-title": "Contactez-nous",
+  "unique-contact-subtitle": "Nous sommes ouverts pour discuter avec de bonnes personnes.",
+  "unique-full-name": "Nom complet",
+  "unique-email-address": "Adresse e-mail",
+  "unique-phone-number": "Numéro de téléphone",
+  "unique-reason-contact": "Raison du contact",
+  "unique-message": "Message",
+  "unique-general-inquiry": "Demande générale",
+  "unique-technical-support": "Support technique",
+  "unique-request-quote": "Demander un devis",
+  "unique-feedback": "Retour d'information",
+  "unique-partnership-opportunity": "Opportunité de partenariat",
+  "unique-other": "Autre",
+  "unique-send-message": "Envoyer le message",
+
+  "footer-company-title": "Entreprise",
+  "footer-home": "Accueil",
+  "footer-services": "Services",
+  "footer-about": "À propos",
+  "footer-pricing": "Tarification",
+  "footer-contact": "Contact",
+  "lang-en": "Anglais",
+  "lang-fr": "Français",
+  "lang-nl": "Néerlandais"
+
+  
 
 
 
