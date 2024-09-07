@@ -23,6 +23,7 @@ window.addEventListener("scroll", (ev) => {
 /*********************/
 /*   Navbar Active   */
 /*********************/
+
 try {
   var spy = new Gumshoe("#navbar-navlist a", {
     // Active classes
@@ -39,6 +40,28 @@ try {
     offset: 80,
   });
 } catch (error) {}
+
+/*********************/
+/*   Cookie Banner   */
+/*********************/
+document.addEventListener("DOMContentLoaded", function () {
+  const cookieBanner = document.getElementById("cookieBanner");
+  const acceptCookiesBtn = document.getElementById("acceptCookies");
+
+  // Vérifier si l'utilisateur a déjà accepté les cookies
+  if (!localStorage.getItem("cookiesAccepted")) {
+    // Afficher la bannière si l'utilisateur n'a pas encore accepté
+    cookieBanner.style.display = "block";
+  }
+
+  // Lorsque l'utilisateur accepte les cookies
+  acceptCookiesBtn.addEventListener("click", function () {
+    // Masquer la bannière
+    cookieBanner.style.display = "none";
+    // Enregistrer dans le localStorage que les cookies ont été acceptés
+    localStorage.setItem("cookiesAccepted", "true");
+  });
+});
 
 /*********************/
 /*   Menu Collapse   */

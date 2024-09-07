@@ -1987,3 +1987,13 @@ p {
   height: 24px;
   stroke: white;
 }
+#cookieBanner {
+  display: none; /* Cacher par défaut */
+  background-color: rgba(0, 0, 0, 0.8); /* Fond opaque */
+  color: #fff;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+}
