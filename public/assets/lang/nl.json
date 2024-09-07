@@ -1,0 +1,38 @@
+{
+  "nav-home": "Home",
+  "nav-services": "Diensten",
+  "nav-about": "Over ons",
+  "nav-pricing": "Prijzen",
+  "nav-contact": "Contact",
+
+  "hero-title": "Uw partner voor innovatieve weboplossingen.",
+  "hero-description": "Wij bieden een uitgebreid assortiment van op maat gemaakte webdiensten om aan de behoeften van uw bedrijf te voldoen, van ontwerp tot ontwikkeling.",
+  "hero-cta": "Ontdek onze diensten",
+
+  "services-title": "Diensten",
+  "services-heading": "Bouw een klantgerichte marketingstrategie",
+  "services-description": "Onze uitgebreide diensten zijn ontworpen om u te helpen uw bedrijfsdoelen efficiënt te bereiken.",
+  
+  "service-digital-marketing-title": "Digitale Marketing",
+  "service-digital-marketing-description": "Verhoog uw online aanwezigheid en bereik uw doelgroep effectief met strategische digitale marketing.",
+  
+  "service-seo-title": "SEO-diensten",
+  "service-seo-description": "Verbeter de zichtbaarheid van uw website op zoekmachines en trek meer organisch verkeer aan met onze SEO-diensten.",
+  
+  "service-ux-title": "Gebruikerservaring (UX)",
+  "service-ux-description": "Creëer een naadloze en boeiende gebruikerservaring voor uw klanten met onze deskundige UX-ontwerpdiensten.",
+  
+  "service-web-development-title": "Website ontwikkeling",
+  "service-web-development-description": "Bouw robuuste en schaalbare websites op maat van uw bedrijfsbehoeften met onze professionele website-ontwikkelingsdiensten.",
+
+  "about-title": "Visies omzetten in online succes",
+  "about-description": "Bij Creative88 zetten we uw visie om in een opmerkelijke online aanwezigheid door een gestructureerd 4-stappen website-creatieproces:",
+  "about-step1-title": "Ontdekking en consultatie",
+  "about-step1-description": "We beginnen met het begrijpen van uw bedrijf, doelen en doelgroep door middel van grondige consultatie.",
+  "about-step2-title": "Ontwerp en planning",
+  "about-step2-description": "We creëren een aantrekkelijke, gebruiksvriendelijke lay-out voor uw site, waarbij de nadruk ligt op een naadloze gebruikerservaring.",
+  "about-step3-title": "Ontwikkeling en implementatie",
+  "about-step3-description": "Zodra het ontwerp is goedgekeurd, brengen we uw site tot leven met behulp van geavanceerde technologieën, die zorgen voor responsiviteit en prestaties.",
+  "about-step4-title": "Lancering en ondersteuning",
+  "about-step4-description": "Na grondige tests en uw definitieve goedkeuring lanceren we uw website en bieden we doorlopende ondersteuning."
+}

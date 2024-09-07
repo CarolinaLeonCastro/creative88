@@ -1,0 +1,38 @@
+{
+  "nav-home": "Accueil",
+  "nav-services": "Services",
+  "nav-about": "À propos",
+  "nav-pricing": "Tarifs",
+  "nav-contact": "Contact",
+
+  "hero-title": "Votre partenaire pour des solutions web innovantes.",
+  "hero-description": "Nous offrons une gamme complète de services web personnalisés pour répondre aux besoins de votre entreprise, du design au développement.",
+  "hero-cta": "Découvrez nos services",
+
+  "services-title": "Services",
+  "services-heading": "Élaborez une stratégie marketing centrée sur le client",
+  "services-description": "Nos services complets sont conçus pour vous aider à atteindre efficacement vos objectifs commerciaux.",
+  
+  "service-digital-marketing-title": "Marketing digital",
+  "service-digital-marketing-description": "Améliorez votre présence en ligne et atteignez efficacement votre public cible grâce à un marketing digital stratégique.",
+  
+  "service-seo-title": "Services SEO",
+  "service-seo-description": "Améliorez la visibilité de votre site web sur les moteurs de recherche et attirez plus de trafic organique grâce à nos services SEO.",
+  
+  "service-ux-title": "Expérience utilisateur (UX)",
+  "service-ux-description": "Créez une expérience utilisateur fluide et engageante pour vos clients avec nos services experts en conception UX.",
+  
+  "service-web-development-title": "Développement de sites web",
+  "service-web-development-description": "Créez des sites web robustes et évolutifs, adaptés aux besoins de votre entreprise, avec nos services professionnels de développement de sites web.",
+
+  "about-title": "Transformer les visions en succès en ligne",
+  "about-description": "Chez Creative88, nous transformons votre vision en une présence en ligne remarquable grâce à un processus de création de site web en 4 étapes structurées :",
+  "about-step1-title": "Découverte et consultation",
+  "about-step1-description": "Nous commençons par comprendre votre entreprise, vos objectifs et votre public cible à travers une consultation approfondie.",
+  "about-step2-title": "Conception et planification",
+  "about-step2-description": "Nous créons une mise en page attrayante et conviviale pour votre site, en mettant l'accent sur une expérience utilisateur fluide.",
+  "about-step3-title": "Développement et mise en œuvre",
+  "about-step3-description": "Une fois le design approuvé, nous donnons vie à votre site en utilisant des technologies de pointe, garantissant réactivité et performance.",
+  "about-step4-title": "Lancement et support",
+  "about-step4-description": "Après des tests approfondis et votre approbation finale, nous lançons votre site et fournissons une maintenance continue."
+}

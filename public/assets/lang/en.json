@@ -1,0 +1,40 @@
+{
+  "nav-home": "Home",
+  "nav-services": "Services",
+  "nav-about": "About us",
+  "nav-pricing": "Pricing",
+  "nav-contact": "Contact",
+
+  "hero-title": "Your Partner for Innovative Web Solutions.",
+  "hero-description": "We offer a comprehensive range of custom web services to meet your business needs, from design to development.",
+  "hero-cta": "Explore Our Services",
+
+  "services-title": "Services",
+  "services-heading": "Build a customer-centric marketing strategy",
+  "services-description": "Our comprehensive services are designed to help you achieve your business goals efficiently.",
+  
+  "service-digital-marketing-title": "Digital Marketing",
+  "service-digital-marketing-description": "Enhance your online presence and reach your target audience effectively through strategic digital marketing.",
+  
+  "service-seo-title": "SEO Services",
+  "service-seo-description": "Improve your website’s visibility on search engines and attract more organic traffic with our SEO services.",
+  
+  "service-ux-title": "User Experience (UX)",
+  "service-ux-description": "Create a seamless and engaging user experience for your customers with our expert UX design services.",
+  
+  "service-web-development-title": "Website Development",
+  "service-web-development-description": "Build robust and scalable websites tailored to your business needs with our professional website development services.",
+
+  "about-title": "Transforming Visions into Online Success",
+  "about-description": "At Creative88, we transform your vision into a remarkable online presence through a structured 4-step website creation process:",
+  "about-step1-title": "Discovery & Consultation",
+  "about-step1-description": "We begin by understanding your business, goals, and target audience through thorough consultation.",
+  "about-step2-title": "Design & Planning",
+  "about-step2-description": "We create an attractive, user-friendly layout for your site, focusing on a seamless user experience.",
+  "about-step3-title": "Development & Implementation",
+  "about-step3-description": "Once the design is approved, we bring your site to life using cutting-edge technologies, ensuring responsiveness and performance.",
+  "about-step4-title": "Launch & Support",
+  "about-step4-description": "After thorough testing and your final approval, we launch your website and provide ongoing maintenance."
+
+  
+}
