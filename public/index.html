@@ -56,43 +56,43 @@
         <div class="container">
         
             <div class="flex lg:flex-nowrap flex-wrap items-center">
-
+    
                 <a href="index.html" class="flex items-center">
                     <img src="assets/images/LogoLight.png" alt="Logo Creative 88">
                 </a>
-
+    
                 <div class="lg:hidden flex items-center ms-auto px-2.5">
                     <button class="hs-collapse-toggle" type="button" id="hs-unstyled-collapse" data-hs-collapse="#navbarCollapse">
                         <i data-lucide="menu" class="h-8 w-8 text-black"></i>
                     </button>
                 </div>
-
+    
                 <div class="navigation hs-collapse transition-all duration-300 lg:basis-auto basis-full grow hidden items-center justify-center lg:flex mx-auto overflow-hidden mt-6 lg:mt-0 nav-light" id="navbarCollapse">
                     <ul class="navbar-nav flex-col lg:flex-row gap-y-2 flex lg:items-center justify-center" id="navbar-navlist">
                         <li class="nav-item mx-1.5 transition-all text-dark lg:text-black group-[&.is-sticky]:text-dark all duration-300 hover:text-primary [&.active]:!text-primary group-[&.is-sticky]:[&.active]:text-primary">
-                            <a class="nav-link inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 capitalize" href="#home">Home</a>
+                            <a id="nav-home" class="nav-link inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 capitalize" href="#home">Home</a>
                         </li>
-
+    
                         <li class="nav-item mx-1.5 transition-all text-dark lg:text-black group-[&.is-sticky]:text-dark duration-300 hover:text-primary [&.active]:!text-primary group-[&.is-sticky]:[&.active]:text-primary">
-                            <a class="nav-link inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 capitalize" href="service.html">Services</a>
+                            <a id="nav-services" class="nav-link inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 capitalize" href="service.html">Services</a>
                         </li>
- 
+    
                         <li class="nav-item mx-1.5 transition-all text-dark lg:text-black group-[&.is-sticky]:text-dark duration-300 hover:text-primary [&.active]:!text-primary group-[&.is-sticky]:[&.active]:text-primary">
-                            <a class="nav-link inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 capitalize" href="about.html">About us</a>
+                            <a id="nav-about-us" class="nav-link inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 capitalize" href="about.html">About us</a>
                         </li> 
                         
                         <li class="nav-item mx-1.5 transition-all text-dark lg:text-black group-[&.is-sticky]:text-dark duration-300 hover:text-primary [&.active]:!text-primary group-[&.is-sticky]:[&.active]:text-primary">
-                            <a class="nav-link inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 capitalize" href="pricing.html">Pricing</a>
+                            <a id="nav-pricing" class="nav-link inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 capitalize" href="pricing.html">Pricing</a>
                         </li>
                         <li class="nav-item mx-1.5 transition-all text-dark lg:text-black group-[&.is-sticky]:text-dark duration-300 hover:text-primary [&.active]:!text-primary group-[&.is-sticky]:[&.active]:text-primary">
-                            <a class="nav-link inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 capitalize" href="#contact">Contact</a>
+                            <a id="nav-contact" class="nav-link inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 capitalize" href="#contact">Contact</a>
                         </li>
-
+    
                     </ul>
                 </div>
-
+    
                 <div class="ms-auto shrink hidden lg:inline-flex gap-2">
-                    <a href="#contact" class="py-2 px-6 inline-flex items-center gap-2 rounded-md text-base text-white bg-primary hover:bg-primaryDark transition-all duration-500 font-medium">
+                    <a href="#contact" id="nav-get-in span" class="py-2 px-6 inline-flex items-center gap-2 rounded-md text-base text-white bg-primary hover:bg-primaryDark transition-all duration-500 font-medium">
                         <i data-lucide="send" class="h-4 w-4 fill-white/40"></i>
                         <span class="hidden sm:block">Get in touch</span>
                     </a>
@@ -100,6 +100,7 @@
             </div>
         </div>
     </nav>
+    
     <!-- Navbar End -->
 
 <!-- =========== Hero Section Start =========== -->
@@ -115,20 +116,20 @@
     <div class="container mx-auto">
         <div class="grid lg:grid-cols-2 grid-cols-1 gap-x-6 gap-y-10 items-center">
             <div class="">
-                <h1 class="text-3xl md:text-5xl lg:text-6xl text-dark tracking-normal capitalize leading-normal font-bold max-w-2xl">
+                <h1 id="hero-title" class="text-3xl md:text-5xl lg:text-6xl text-dark tracking-normal capitalize leading-normal font-bold max-w-2xl">
                     Your Partner for Innovative Web Solutions.
                 </h1>
-                <p class="text-base font-medium text-gray-400 mt-3 capitalize">
+                <p id="hero-subtitle" class="text-base font-medium text-gray-400 mt-3 capitalize">
                     We offer a comprehensive range of custom web services to meet your business needs, from design to development.
                 </p>
                 
                 <div class="flex flex-wrap mt-9 text-center gap-3">
-                    <a class="inline-block px-6 py-2 rounded-md text-white text-base border border-primary hover:bg-primaryDark bg-primary hover:border-primaryDark transition-all duration-300 items-center justify-center text-center font-medium" href="service.html">
+                    <a id="hero-explore-services" class="inline-block px-6 py-2 rounded-md text-white text-base border border-primary hover:bg-primaryDark bg-primary hover:border-primaryDark transition-all duration-300 items-center justify-center text-center font-medium" href="service.html">
                         <i class="mdi mdi-web text-base text-white mr-1"></i>
                         Explore Our Services
                     </a>
 
-                    <a class="inline-block py-2 px-6 text-primary rounded-md border border-primary text-base hover:border-gray-800 hover:bg-gray-800 group hover:text-primary transition-all duration-500 font-medium" href="#contact">
+                    <a id="hero-contact-us" class="inline-block py-2 px-6 text-primary rounded-md border border-primary text-base hover:border-gray-800 hover:bg-gray-800 group hover:text-primary transition-all duration-500 font-medium" href="#contact">
                         <i class="mdi mdi-email text-base text-primary mr-1 group-hover:text-white transition-all duration-500"></i>
                         Contact Us
                     </a>
@@ -141,6 +142,7 @@
         </div>
     </div>
 </section>
+
 <!-- =========== Hero Section End =========== -->
 
     <div class="relative">
@@ -152,60 +154,61 @@
     </div>
 
     <!-- Services Start -->
-<section id="services" class="py-20 bg-gray-900 text-gray-200">
-    <div class="container mx-auto">
-        <div class="max-w-2xl mx-auto text-center">
-            <span class="text-sm text-primary uppercase font-semibold tracking-wider">Services</span>
-            <h2 class="text-3xl md:text-4xl/tight font-semibold mt-4">Build a customer-centric marketing strategy</h2>
-            <p class="text-base font-medium mt-4 text-gray-400">Our comprehensive services are designed to help you achieve your business goals efficiently.</p>
+    <section id="services" class="py-20 bg-gray-900 text-gray-200">
+        <div class="container mx-auto">
+            <div class="max-w-2xl mx-auto text-center">
+                <span id="services-title" class="text-sm text-primary uppercase font-semibold tracking-wider">Services</span>
+                <h2 id="services-subtitle" class="text-3xl md:text-4xl/tight font-semibold mt-4">Build a customer-centric marketing strategy</h2>
+                <p id="services-description" class="text-base font-medium mt-4 text-gray-400">Our comprehensive services are designed to help you achieve your business goals efficiently.</p>
+            </div>
+    
+            <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-x-3 gap-y-6 md:gap-y-12 lg:gap-y-24 md:pt-20 pt-12">
+    
+                <div class="text-center">
+                    <div class="flex items-center justify-center">
+                        <div class="items-center justify-center flex bg-primary/10 rounded-[49%_80%_40%_90%_/_50%_30%_70%_80%] h-20 w-20 border">
+                            <i data-lucide="bar-chart-big" class="h-10 w-10 text-primary"></i>
+                        </div>
+                    </div>
+                    <h1 id="service-digital-marketing-title" class="text-xl font-semibold pt-4">Digital Marketing</h1>
+                    <p id="service-digital-marketing-description" class="text-base text-gray-400 mt-2">Enhance your online presence and reach your target audience effectively through strategic digital marketing.</p>
+                </div>
+    
+                <div class="text-center">
+                    <div class="flex items-center justify-center">
+                        <div class="items-center justify-center flex bg-primary/10 rounded-[49%_80%_40%_90%_/_50%_30%_70%_80%] h-20 w-20 border">
+                            <i data-lucide="search" class="h-10 w-10 text-primary"></i>
+                        </div>
+                    </div>
+                    <h1 id="service-seo-title" class="text-xl font-semibold pt-4">SEO Services</h1>
+                    <p id="service-seo-description" class="text-base text-gray-400 mt-2">Improve your website’s visibility on search engines and attract more organic traffic with our SEO services.</p>
+                </div>
+    
+                <div class="text-center">
+                    <div class="flex items-center justify-center">
+                        <div class="items-center justify-center flex bg-primary/10 rounded-[49%_80%_40%_90%_/_50%_30%_70%_80%] h-20 w-20 border">
+                            <i data-lucide="lightbulb" class="h-10 w-10 text-primary"></i>
+                        </div>
+                    </div>
+                    <h1 id="service-ux-title" class="text-xl font-semibold pt-4">User Experience (UX)</h1>
+                    <p id="service-ux-description" class="text-base text-gray-400 mt-2">Create a seamless and engaging user experience for your customers with our expert UX design services.</p>
+                </div>
+    
+                <div class="text-center">
+                    <div class="flex items-center justify-center">
+                        <div class="items-center justify-center flex bg-primary/10 rounded-[49%_80%_40%_90%_/_50%_30%_70%_80%] h-20 w-20 border">
+                            <i data-lucide="codepen" class="h-10 w-10 text-primary"></i>
+                        </div>
+                    </div>
+                    <h1 id="service-web-dev-title" class="text-xl font-semibold pt-4">Website Development</h1>
+                    <p id="service-web-dev-description" class="text-base text-gray-400 mt-2">Build robust and scalable websites tailored to your business needs with our professional website development services.</p>
+                </div>
+    
+            </div>
+    
         </div>
-
-        <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-x-3 gap-y-6 md:gap-y-12 lg:gap-y-24 md:pt-20 pt-12">
-
-            <div class="text-center">
-                <div class="flex items-center justify-center">
-                    <div class="items-center justify-center flex bg-primary/10 rounded-[49%_80%_40%_90%_/_50%_30%_70%_80%] h-20 w-20 border">
-                        <i data-lucide="bar-chart-big" class="h-10 w-10 text-primary"></i>
-                    </div>
-                </div>
-                <h1 class="text-xl font-semibold pt-4">Digital Marketing</h1>
-                <p class="text-base text-gray-400 mt-2">Enhance your online presence and reach your target audience effectively through strategic digital marketing.</p>
-            </div>
-
-            <div class="text-center">
-                <div class="flex items-center justify-center">
-                    <div class="items-center justify-center flex bg-primary/10 rounded-[49%_80%_40%_90%_/_50%_30%_70%_80%] h-20 w-20 border">
-                        <i data-lucide="search" class="h-10 w-10 text-primary"></i>
-                    </div>
-                </div>
-                <h1 class="text-xl font-semibold pt-4">SEO Services</h1>
-                <p class="text-base text-gray-400 mt-2">Improve your website’s visibility on search engines and attract more organic traffic with our SEO services.</p>
-            </div>
-
-            <div class="text-center">
-                <div class="flex items-center justify-center">
-                    <div class="items-center justify-center flex bg-primary/10 rounded-[49%_80%_40%_90%_/_50%_30%_70%_80%] h-20 w-20 border">
-                        <i data-lucide="lightbulb" class="h-10 w-10 text-primary"></i>
-                    </div>
-                </div>
-                <h1 class="text-xl font-semibold pt-4">User Experience (UX)</h1>
-                <p class="text-base text-gray-400 mt-2">Create a seamless and engaging user experience for your customers with our expert UX design services.</p>
-            </div>
-
-            <div class="text-center">
-                <div class="flex items-center justify-center">
-                    <div class="items-center justify-center flex bg-primary/10 rounded-[49%_80%_40%_90%_/_50%_30%_70%_80%] h-20 w-20 border">
-                        <i data-lucide="codepen" class="h-10 w-10 text-primary"></i>
-                    </div>
-                </div>
-                <h1 class="text-xl font-semibold pt-4">Website Development</h1>
-                <p class="text-base text-gray-400 mt-2">Build robust and scalable websites tailored to your business needs with our professional website development services.</p>
-            </div>
-
-        </div>
-
-    </div>
-</section>
+    </section>
+    
 <!-- Services End -->
 <!-- About Start -->
 <section id="about" class="py-20 bg-gray-900 text-gray-200">
@@ -649,6 +652,7 @@
                 <div class="col-span-1">
                     <img src="assets/images/footer.png" alt="Footer funny Image" class="h-48 w-full object-cover rounded-lg" loading="lazy">
                 </div>
+              
             </div>
         </div>
 
@@ -664,20 +668,68 @@
                             </svg>
                         </a>
                     </div>
+                      <!-- Select translation -->
+                <div>
+                    <select onchange="loadTranslations(this.value)">
+                        <option value="en">English</option>
+                        <option value="fr">Français</option>
+                        <option value="nl">Nederlands</option>
+                    </select>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
+   
     <!-- Footer End -->
     <button id="backToTop" class="back-to-top">
         <i data-lucide="arrow-up"></i>
       </button>
-      
 
+
+      <script>
+     function loadTranslations(language) {
+    fetch('translations.json')
+        .then(response => response.json())
+        .then(data => {
+            const translations = data[language];
+            document.querySelector('#nav-home').textContent = translations.nav_home;
+            document.querySelector('#nav-services').textContent = translations.nav_services;
+            document.querySelector('#nav-about-us').textContent = translations.nav_about_us;
+            document.querySelector('#nav-pricing').textContent = translations.nav_pricing;
+            document.querySelector('#nav-contact').textContent = translations.nav_contact;
+            document.querySelector('#nav-get-in span').textContent = translations.nav_get_in;
+            document.querySelector('#hero-title').textContent = translations.hero_title;
+            document.querySelector('#hero-subtitle').textContent = translations.hero_subtitle;
+            document.querySelector('#hero-explore-services').textContent = translations.hero_explore_services;
+            document.querySelector('#hero-contact-us').textContent = translations.hero_contact_us;
+            document.querySelector('#services-title').textContent = translations.services_title;
+            document.querySelector('#services-subtitle').textContent = translations.services_subtitle;
+            document.querySelector('#services-description').textContent = translations.services_description;
+            document.querySelector('#service-digital-marketing-title').textContent = translations.service_digital_marketing_title;
+            document.querySelector('#service-digital-marketing-description').textContent = translations.service_digital_marketing_description;
+            document.querySelector('#service-seo-title').textContent = translations.service_seo_title;
+            document.querySelector('#service-seo-description').textContent = translations.service_seo_description;
+            document.querySelector('#service-ux-title').textContent = translations.service_ux_title;
+            document.querySelector('#service-ux-description').textContent = translations.service_ux_description;
+            document.querySelector('#service-web-dev-title').textContent = translations.service_web_dev_title;
+            document.querySelector('#service-web-dev-description').textContent = translations.service_web_dev_description;
+        })
+        .catch(error => console.error('Error loading the translations:', error));
+}
+
+// Charger toujours la langue anglaise par défaut
+document.addEventListener('DOMContentLoaded', () => {
+    loadTranslations('en');
+});
+
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            lucide.createIcons();
+        });
+    </script>
     
-    <!-- Preline Js -->
-    <script src="assets/libs/preline/preline.js" ></script>
-
     <!-- Lucide Js -->
     <script src="assets/libs/lucide/umd/lucide.min.js"></script>
 
@@ -686,12 +738,6 @@
 
     <!-- Jarallax Js -->
     <script src="assets/libs/jarallax/jarallax.min.js"></script>
-
-    <!-- Swiper Bundle Js -->
-    <script src="assets/libs/swiper/swiper-bundle.min.js"></script>
-
-    <!-- Swiper Js -->
-    <script src="assets/js/swiper.js"></script>
 
     <!-- Main App Js -->
     <script src="assets/js/app.js" ></script>
