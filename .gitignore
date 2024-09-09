@@ -1,3 +1,4 @@
 node_modules
 server.mjs
 .env
+sitemap.xml
