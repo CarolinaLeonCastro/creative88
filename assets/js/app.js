@@ -23,6 +23,7 @@ window.addEventListener("scroll", (ev) => {
 /*********************/
 /*   Navbar Active   */
 /*********************/
+
 try {
   var spy = new Gumshoe("#navbar-navlist a", {
     // Active classes
@@ -39,6 +40,28 @@ try {
     offset: 80,
   });
 } catch (error) {}
+
+/*********************/
+/*   Cookie Banner   */
+/*********************/
+document.addEventListener("DOMContentLoaded", function () {
+  const cookieBanner = document.getElementById("cookieBanner");
+  const acceptCookiesBtn = document.getElementById("acceptCookies");
+
+  // Vérifier si l'utilisateur a déjà accepté les cookies
+  if (!localStorage.getItem("cookiesAccepted")) {
+    // Afficher la bannière si l'utilisateur n'a pas encore accepté
+    cookieBanner.style.display = "block";
+  }
+
+  // Lorsque l'utilisateur accepte les cookies
+  acceptCookiesBtn.addEventListener("click", function () {
+    // Masquer la bannière
+    cookieBanner.style.display = "none";
+    // Enregistrer dans le localStorage que les cookies ont été acceptés
+    localStorage.setItem("cookiesAccepted", "true");
+  });
+});
 
 /*********************/
 /*   Menu Collapse   */
@@ -252,10 +275,10 @@ lucide.createIcons();
 /*********************/
 /*   Contact Form   */
 /*********************/
-document.addEventListener("DOMContentLoaded", function () {
-  const notification = document.getElementById("notification");
 
+document.addEventListener("DOMContentLoaded", function () {
   function showNotification(message, isError = false) {
+    const notification = document.getElementById("notification");
     notification.textContent = message;
     notification.className = `notification ${isError ? "error" : ""} show`;
 
@@ -275,27 +298,35 @@ document.addEventListener("DOMContentLoaded", function () {
       const reason = document.getElementById("formReason").value.trim();
       const message = document.getElementById("formMessages").value.trim();
 
-      fetch("https://vercel.com/not-kamis-projects/back/send-message", {
+      fetch("https://discord-contact-form.vercel.app/api/send-message", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ fullName, email, phone, reason, message }),
+        body: JSON.stringify({
+          fullName,
+          email,
+          phone,
+          reason,
+          message,
+        }),
       })
         .then((response) => {
-          if (response.ok) {
-            return response.json();
-          } else {
+          if (!response.ok) {
             throw new Error("Failed to send message");
           }
+          return response.json();
         })
         .then((data) => {
           showNotification(data.message);
           document.getElementById("contactForm").reset();
         })
         .catch((error) => {
-          console.error("Error:", error);
-          showNotification("There was a problem with your submission. Please try again.", true);
+          console.error("Erreur:", error);
+          showNotification(
+            "An error occurred during your submission. Please try again.",
+            true
+          );
         });
     });
 });
