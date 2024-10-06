@@ -66,36 +66,42 @@ document.addEventListener("DOMContentLoaded", function () {
 /*********************/
 /*   Menu Collapse   */
 /*********************/
+// Ajout d'une fonction vide pour éviter l'erreur
 const toggleCollapse = (elementId, show = true) => {
-  const collapseEl = document.getElementById(elementId);
-  if (show) {
-    collapseEl.classList.remove("hidden");
-  } else {
-    collapseEl.classList.add("hidden");
-  }
+  console.log(`toggleCollapse called for ${elementId}`);
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Toggle target elements using [data-collapse]
-  document
-    .querySelectorAll("[data-collapse]")
-    .forEach(function (collapseToggleEl) {
-      var collapseId = collapseToggleEl.getAttribute("data-collapse");
+  const toggleCollapse = (elementId, show = true) => {
+    const collapseEl = document.getElementById(elementId);
+    if (collapseEl) {
+      if (show) {
+        collapseEl.classList.remove("hidden");
+      } else {
+        collapseEl.classList.add("hidden");
+      }
+    } else {
+      console.error(`Element with id ${elementId} not found.`);
+    }
+  };
 
-      collapseToggleEl.addEventListener("click", function () {
-        toggleCollapse(
-          collapseId,
-          document.getElementById(collapseId).classList.contains("hidden")
-        );
-      });
+  // Si tu utilises data-collapse dans ton HTML
+  document.querySelectorAll("[data-collapse]").forEach((collapseToggleEl) => {
+    const collapseId = collapseToggleEl.getAttribute("data-collapse");
+
+    collapseToggleEl.addEventListener("click", function () {
+      toggleCollapse(
+        collapseId,
+        document.getElementById(collapseId).classList.contains("hidden")
+      );
     });
+  });
 });
-
-window.toggleCollapse = toggleCollapse;
 
 /*********************/
 /*   Back To Top     */
 /*********************/
+
 document.addEventListener("DOMContentLoaded", function () {
   const backToTopButton = document.getElementById("backToTop");
 
